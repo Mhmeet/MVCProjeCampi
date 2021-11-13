@@ -1,0 +1,48 @@
+﻿@using EntityLayer.Concrete
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+
+<div class="card text-body mb-4" style="height:50px; width:100px; margin:auto; text-align:center;line-height:50px">ISTATISTIK</div>
+<div class="card-deck" style="width:75%;  margin: auto;">
+    <div class="card text-white bg-primary mb-4 ">
+        <div class="card-body">
+            <h5 class="card-title">Toplam Kategori Sayısı</h5>
+            <br />
+            <h6 class="card-text" style="color:red;"> @ViewBag.CategoryCount</h6>
+        </div>
+    </div>
+    <div class="card text-white bg-secondary mb-4 ">
+        <div class="card-body">
+            <h5 class="card-title">Yazılım Kategorisi Başlık Sayısı</h5>
+            <br />
+            <h6 class="card-text" style="color:red;"> @ViewBag.Heading</h6>
+        </div>
+    </div>
+    <div class="card text-white bg-warning mb-4 ">
+        <div class="card-body">
+            <h5 class="card-title">Yazarların İsimlerinde "a" Harfi Bulunanlar</h5>
+            <br />
+            <h6 class="card-text" style="color:red;"> @ViewBag.Writer</h6>
+        </div>
+    </div>
+</div>
+<div class="card-deck" style="width:40%;  margin: auto;">
+    <div class="card text-white bg-gradient-dark mb-4 ">
+        <div class="card-body">
+            <h5 class="card-title">En Fazla Başlığı Olan Kategori Adı</h5>
+            <br />
+            <h6 class="card-text" style="color:red;"> @ViewBag.HeadingMax</h6>
+        </div>
+    </div>
+    <div class="card text-white bg-primary mb-4 ">
+        <div class="card-body">
+            <h5 class="card-title">Kategoriler Tablosunda T/F Farkı </h5>
+            <br />
+            <h6 class="card-text" style="color:red;"> @ViewBag.StatusFark</h6>
+        </div>
+    </div>
+</div>
